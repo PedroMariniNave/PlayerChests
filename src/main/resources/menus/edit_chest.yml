@@ -1,0 +1,45 @@
+Inventory:
+  title: "Baús"
+  size: 27
+  items:
+    1:
+      action: EDIT_NAME
+      type: NAME_TAG
+      glow: true
+      name: '&aNome'
+      lore:
+        - '&7Você pode nomear seu baú'
+        - '&7como quiser!'
+        - ''
+        - '&7Clique para escolher um nome!'
+      slot: 11
+    2:
+      action: EDIT_ICON
+      type: CHEST
+      name: '&aÍcone'
+      lore:
+        - '&7Você pode escolher um ícone que'
+        - '&7representa os itens do seu baú!'
+        - ''
+        - '&7Clique para escolher um ícone!'
+      slot: 13
+    3:
+      action: GLOW
+      type: ENDER_PEARL
+      name: '&aBrilho'
+      lore:
+        - '&7Você pode escolher se o ícone'
+        - '&7irá brilhar ou não!'
+        - ''
+        - '&7Lembre-se que nem todos itens'
+        - '&7possuem essa propriedade.'
+        - ''
+        - '&7Brilhando: {glowing}'
+        - ''
+        - '&7Clique para alterar!'
+      slot: 15
+    4:
+      action: BACK
+      type: ARROW
+      name: '&cVoltar'
+      slot: 18

@@ -1,0 +1,5 @@
+name: PlayerChests
+description: Only a simple virtual chests plugin.
+version: 1.0
+author: zPedroo_
+main: com.zpedroo.playerchests.PlayerChests

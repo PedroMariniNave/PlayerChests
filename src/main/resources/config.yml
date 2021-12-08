@@ -1,0 +1,33 @@
+MySQL:
+  enabled: false
+  host: localhost
+  database: db
+  username: user
+  password: pass
+  port: 3306
+
+Settings:
+  command: bau
+  aliases: [baus, chest, chests]
+  permission: chests.use
+  permission-message: '&cVocê precisa ser um &5[VipBeast] &cou superior para usar baús virtuais!'
+  save-interval: 600
+  chests-amount: 15
+  chest-size: 54
+  date-format: 'dd/MM/yyyy HH:mm'
+
+Messages:
+  glowing: '&aSim'
+  not-glowing: '&cNão'
+  never: '-/-'
+  edit-name:
+    - '&6&lVoltz&f&lMC &8&l➜ &7Digite no chat o nome que deseja colocar no seu baú!'
+    - '&6&lVoltz&f&lMC &8&l➜ &7Lembre-se que você pode usar cores!'
+
+Next-Page:
+  type: ARROW
+  name: '&aPróxima Página'
+
+Previous-Page:
+  type: ARROW
+  name: '&cPágina Anterior'

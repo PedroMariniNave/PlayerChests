@@ -1,0 +1,84 @@
+Inventory:
+  title: "Baús"
+  size: 45
+  item-slots: 11,12,13,14,15,20,21,22,23,24,29,30,31,32,33
+  next-page-slot: 26 # só vai aparecer se tiver próxima página
+  previous-page-slot: 18 # só vai aparecer se tiver página anterior
+  items:
+    1:
+      type: DIAMOND_SWORD
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    2:
+      type: DIAMOND_CHESTPLATE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    3:
+      type: DIAMOND_PICKAXE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    4:
+      type: EMERALD
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    5:
+      type: ENDER_EYE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    6:
+      type: FIRE_CHARGE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    7:
+      type: FIREWORKS
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    8:
+      type: GOLD_INGOT
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    9:
+      type: GOLD_NUGGET
+      lore:
+      - '&7Clique para escolher esse ícone!'
+    10:
+      type: GOLDEN_APPLE
+      data: 1
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    11:
+      type: GOLDEN_SWORD
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    12:
+      type: IRON_SWORD
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    13:
+      type: MAGMA_CREAM
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    14:
+      type: NETHER_STAR
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    15:
+      type: REDSTONE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    16:
+      type: SNOWBALL
+      lore:
+      - '&7Clique para escolher esse ícone!'
+    17:
+      type: STRING
+      lore:
+      - '&7Clique para escolher esse ícone!'
+    18:
+      type: TNT
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    19:
+      type: GOLD_NUGGET
+      lore:
+        - '&7Clique para escolher esse ícone!'
