@@ -12,11 +12,10 @@ public class DataManager {
     private static DataManager instance;
     public static DataManager getInstance() { return instance; }
 
-    private final DataCache dataCache;
+    private final DataCache dataCache = new DataCache();
 
     public DataManager() {
         instance = this;
-        this.dataCache = new DataCache();
     }
 
     public PlayerData load(Player player) {
@@ -31,8 +30,7 @@ public class DataManager {
 
     public void save(Player player) {
         PlayerData data = dataCache.getPlayerData().get(player);
-        if (data == null) return;
-        if (!data.isQueueUpdate()) return;
+        if (data == null || !data.isQueueUpdate()) return;
 
         DBConnection.getInstance().getDBManager().saveData(data);
         data.setUpdate(false);

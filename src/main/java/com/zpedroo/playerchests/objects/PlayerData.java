@@ -16,8 +16,8 @@ import static com.zpedroo.playerchests.utils.config.Settings.*;
 
 public class PlayerData {
 
-    private UUID uuid;
-    private List<Chest> chests;
+    private final UUID uuid;
+    private final List<Chest> chests;
     private boolean update;
 
     public PlayerData(UUID uuid, List<Chest> chests) {

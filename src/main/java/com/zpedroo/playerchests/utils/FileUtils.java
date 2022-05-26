@@ -16,8 +16,8 @@ public class FileUtils {
     private static FileUtils instance;
     public static FileUtils get() { return instance; }
 
-    private Plugin plugin;
-    private Map<Files, FileManager> files;
+    private final Plugin plugin;
+    private final Map<Files, FileManager> files;
 
     public FileUtils(Plugin plugin) {
         instance = this;
@@ -112,9 +112,9 @@ public class FileUtils {
         EDIT_CHEST("edit_chest", "menus", "menus"),
         ICONS("icons", "menus", "menus");
 
-        private String name;
-        private String resource;
-        private String folder;
+        private final String name;
+        private final String resource;
+        private final String folder;
 
         Files(String name, String resource, String folder) {
             this.name = name;
@@ -137,7 +137,7 @@ public class FileUtils {
 
     public class FileManager {
 
-        private File file;
+        private final File file;
         private FileConfiguration fileConfig;
 
         public FileManager(Files file) {

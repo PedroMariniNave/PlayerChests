@@ -78,7 +78,7 @@ public class InventoryUtils {
             if (action != null) action.getAction().run();
         }
 
-        @EventHandler(priority = EventPriority.LOWEST)
+        @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
         public void onClose(InventoryCloseEvent event) {
             if (!chestInventories.containsKey(event.getInventory())) return;
 
@@ -93,16 +93,14 @@ public class InventoryUtils {
             chest.setInventory(inventory);
 
             PlayerData data = DataManager.getInstance().load((Player) event.getPlayer());
-            if (data == null) return;
-
             data.setUpdate(true);
         }
     }
 
     public static class Action {
 
-        private Runnable action;
-        private ActionType actionType;
+        private final Runnable action;
+        private final ActionType actionType;
 
         public Action(Runnable action, ActionType actionType) {
             this.action = action;

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class DataCache {
 
-    private Map<Player, PlayerData> playerData;
+    private final Map<Player, PlayerData> playerData;
 
     public DataCache() {
         this.playerData = new HashMap<>(32);

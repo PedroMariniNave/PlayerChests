@@ -83,6 +83,57 @@ public class Menus extends InventoryUtils {
         inventory.open(player);
     }
 
+    public void openOtherChestsMenu(Player player, Player target) {
+        FileUtils.Files file = FileUtils.Files.MAIN;
+
+        String title = ChatColor.translateAlternateColorCodes('&', FileUtils.get().getString(file, "Inventory.title"));
+        int size = FileUtils.get().getInt(file, "Inventory.size");
+
+        int nextPageSlot = FileUtils.get().getInt(file, "Inventory.next-page-slot");
+        int previousPageSlot = FileUtils.get().getInt(file, "Inventory.previous-page-slot");
+
+        InventoryBuilder inventory = new InventoryBuilder(title, size, previousPageItem, previousPageSlot, nextPageItem, nextPageSlot);
+
+        PlayerData data = DataManager.getInstance().load(target);
+
+        int id = 0;
+        int slotPosition = -1;
+        String[] slots = FileUtils.get().getString(file, "Inventory.item-slots").replace(" ", "").split(",");
+        for (Chest chest : data.getChests()) {
+            if (++slotPosition >= slots.length) slotPosition = 0;
+
+            SimpleDateFormat dateFormatter = new SimpleDateFormat(Settings.DATE_FORMAT);
+
+            ItemBuilder builder = ItemBuilder.build(FileUtils.get().getFile(file).get(), "Item", new String[]{
+                    "{id}",
+                    "{items_amount}",
+                    "{modification}"
+            }, new String[]{
+                    String.valueOf(++id),
+                    String.valueOf(chest.getItemsAmount()),
+                    chest.getLastModificationInMillis() <= 0 ? Messages.NEVER : dateFormatter.format(chest.getLastModificationInMillis())
+            });
+
+            if (chest.getIcon() != null) builder.setType(chest.getIcon());
+            if (chest.getName() != null) builder.setName(chest.getName());
+            if (chest.isGlowIcon()) builder.setGlow();
+
+            int slot = Integer.parseInt(slots[slotPosition]);
+
+            ItemStack item = builder.build();
+
+            inventory.addItem(item, slot, () -> {
+                openChestMenu(player, chest);
+            }, ActionType.LEFT_CLICK);
+
+            inventory.addAction(slot, () -> {
+                openEditChestMenu(player, chest);
+            }, ActionType.RIGHT_CLICK);
+        }
+
+        inventory.open(player);
+    }
+
     public void openEditChestMenu(Player player, Chest chest) {
         FileUtils.Files file = FileUtils.Files.EDIT_CHEST;
 

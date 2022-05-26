@@ -87,8 +87,7 @@ public class DBManager {
     }
 
     protected void createTable() {
-        String query = "CREATE TABLE IF NOT EXISTS `" + DBConnection.TABLE + "` (`uuid` VARCHAR(255), `chests` BLOB, PRIMARY KEY(`uuid`));";
-        executeUpdate(query);
+        executeUpdate("CREATE TABLE IF NOT EXISTS `" + DBConnection.TABLE + "` (`uuid` VARCHAR(255), `chests` BLOB, PRIMARY KEY(`uuid`));");
     }
 
     private Connection getConnection() throws SQLException {

@@ -7,78 +7,193 @@ Inventory:
   items:
     1:
       type: DIAMOND_SWORD
+      hide-attributes: true
       lore:
         - '&7Clique para escolher esse ícone!'
     2:
-      type: DIAMOND_CHESTPLATE
+      type: DIAMOND_HELMET
       lore:
         - '&7Clique para escolher esse ícone!'
     3:
-      type: DIAMOND_PICKAXE
+      type: DIAMOND_CHESTPLATE
       lore:
         - '&7Clique para escolher esse ícone!'
     4:
-      type: EMERALD
+      type: DIAMOND_LEGGINGS
       lore:
         - '&7Clique para escolher esse ícone!'
     5:
-      type: ENDER_EYE
+      type: DIAMOND_BOOTS
       lore:
         - '&7Clique para escolher esse ícone!'
     6:
-      type: FIRE_CHARGE
+      type: IRON_SWORD
+      hide-attributes: true
       lore:
         - '&7Clique para escolher esse ícone!'
     7:
-      type: FIREWORKS
+      type: IRON_HELMET
       lore:
         - '&7Clique para escolher esse ícone!'
     8:
-      type: GOLD_INGOT
+      type: IRON_CHESTPLATE
       lore:
         - '&7Clique para escolher esse ícone!'
     9:
-      type: GOLD_NUGGET
+      type: IRON_LEGGINGS
       lore:
-      - '&7Clique para escolher esse ícone!'
+        - '&7Clique para escolher esse ícone!'
     10:
-      type: GOLDEN_APPLE
-      data: 1
+      type: IRON_BOOTS
       lore:
         - '&7Clique para escolher esse ícone!'
     11:
-      type: GOLDEN_SWORD
+      type: GOLD_SWORD
+      hide-attributes: true
       lore:
         - '&7Clique para escolher esse ícone!'
     12:
-      type: IRON_SWORD
+      type: GOLD_HELMET
       lore:
         - '&7Clique para escolher esse ícone!'
     13:
-      type: MAGMA_CREAM
+      type: GOLD_CHESTPLATE
       lore:
         - '&7Clique para escolher esse ícone!'
     14:
-      type: NETHER_STAR
+      type: GOLD_LEGGINGS
       lore:
         - '&7Clique para escolher esse ícone!'
     15:
-      type: REDSTONE
+      type: GOLD_BOOTS
       lore:
         - '&7Clique para escolher esse ícone!'
     16:
-      type: SNOWBALL
+      type: WOOD_SWORD
+      hide-attributes: true
       lore:
-      - '&7Clique para escolher esse ícone!'
+        - '&7Clique para escolher esse ícone!'
     17:
-      type: STRING
+      type: LEATHER_HELMET
       lore:
-      - '&7Clique para escolher esse ícone!'
+        - '&7Clique para escolher esse ícone!'
     18:
-      type: TNT
+      type: LEATHER_CHESTPLATE
       lore:
         - '&7Clique para escolher esse ícone!'
     19:
+      type: LEATHER_LEGGINGS
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    20:
+      type: LEATHER_BOOTS
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    21:
+      type: BOW
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    22:
+      type: CHAINMAIL_HELMET
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    23:
+      type: CHAINMAIL_CHESTPLATE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    24:
+      type: CHAINMAIL_LEGGINGS
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    25:
+      type: CHAINMAIL_BOOTS
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    26:
+      type: ARROW
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    27:
+      type: DIAMOND_PICKAXE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    28:
+      type: IRON_PICKAXE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    29:
+      type: STONE_PICKAXE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    30:
+      type: WOOD_PICKAXE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    31:
+      type: GOLDEN_APPLE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    32:
+      type: MAGMA_CREAM
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    33:
+      type: FIREBALL
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    34:
+      type: EYE_OF_ENDER
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    35:
+      type: ENDER_PEARL
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    36:
+      type: FIREWORK
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    37:
+      type: NETHER_STAR
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    38:
+      type: DIAMOND
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    39:
+      type: EMERALD
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    40:
+      type: REDSTONE
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    41:
+      type: GOLD_INGOT
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    42:
       type: GOLD_NUGGET
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    43:
+      type: SNOW_BALL
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    44:
+      type: STRING
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    45:
+      type: TNT
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    46:
+      type: CHEST
+      lore:
+        - '&7Clique para escolher esse ícone!'
+    47:
+      type: ENDER_CHEST
       lore:
         - '&7Clique para escolher esse ícone!'
